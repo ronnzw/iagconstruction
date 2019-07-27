@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>IAG Construction Solutions</title>
+
+    {% load staticfiles %}
+
+   
+
+    <!-- Bootstrap core CSS -->
+    <link rel='shortcut icon' type='image/x-icon' href='/static/img/paverlogo.ico' />
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href="{% static '/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+    <style>
+    /* [1] The container */
+.img-hover-zoom {
+  height: 100%; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+  border-color: orange;
+}	
+    </style>
+</head>
+<body style="font-family: 'Arial-Narrow';">
+
+
+	<div class="container-fluid" style="height: 80px; background-image: linear-gradient(90deg, black 60%, #445c6d 40%);">
+		<br>
+		<div class="row">
+			<div class="col-md-4">
+				<span class="fa fa-phone" style="color: white;">&nbsp + 27 11 083 7784</span>
+			</div>
+			<div class="col-md-4">
+				<span class="fa fa-envelope-o" style="color: white;">&nbsp&nbsp info@iagcs.co.za</span>
+			</div>
+			<div class="col-md-4" style="font-size: 30px; text-align: right;">
+				<a href="https://www.facebook.com/IAG-Construction-Solutions-109087037092552/" title="Facebook" target="_blank">
+					<span class="fa fa-facebook-square" style="color: white;"></span>
+				</a>
+
+				<a href="https://aboutme.google.com/u/0/?referer=gplus" title="Google +" target="_blank">
+					<span class="fa fa-google-plus-square" style="color: white;"></span>
+				</a>
+
+				<a href="https://twitter.com/SolutionsIag" title="Twitter" target="_blank">
+					<span class="fa fa-twitter-square"style="color: white;"></span>
+				</a>
+
+				<a href="https://www.youtube.com/?gl=ZA&tab=m1" title="YouTube" target="_blank">
+					<span class="fa fa-youtube-square" style="color: white;"></span>
+				</a>
+
+			</div>			
+		</div>	
+	</div>
+
+<div class="container">
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white">
+  <a class="my-0 mr-md-auto font-weight-normal" href="/"><img alt="Brand" style=" width: 120px; height: 100px" src="/static/img/IAGConstructionSolutions.png"></a>
+  <nav class="my-2 my-md-0 mr-md-3">
+    <a class="p-2 text-dark" href="/"><span class="badge badge-pill" style="background: #445c6d; color: white; font-size: 15px">Home</span></a>
+    <a class="p-2 text-dark" href="about"><span class="badge badge-pill" style="background: #445c6d; color: white; font-size: 15px">About</span></a>
+    <a class="p-2 text-dark" href="services"><span class="badge badge-pill" style="background: #445c6d; color: white; font-size: 15px">Services</span></a>
+    <a class="p-2 text-dark" href="contact"><span class="badge badge-pill" style="background: #445c6d; color: white; font-size: 15px">Contact</span></a>
+   </nav>
+</div>
+</div>
+
+
+
+{% block content %}
+{% endblock %}
+{% include "newletter.html" %}
