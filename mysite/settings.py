@@ -25,7 +25,7 @@ SECRET_KEY = 'o*_*enyo*70r9&5s0&ymp^7@*u_lgymqkr^%94=-i9p%06*=ik'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com', 'http://www.iagcs.co.za/']
 
 
 # Application definition
